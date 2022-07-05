@@ -1,3 +1,6 @@
+let x = 0;
+
+
 function openNav() {
     const nav = document.getElementById("nav");
     const navclose = document.getElementById("navclose");
@@ -14,10 +17,11 @@ function openNav() {
     nav.style.boxShadow = "20px 0 50px rgba(0, 0, 0, 0.4)";
     nav.style.padding = "20px";
     navclose.style.display = "block";
+    x = 1;
 }
 
 
 function closeNav() {
     const nav = document.getElementById("nav");
-    nav.style.display = "none";
+    if (x==1) {nav.style.display = "none";}
 }
