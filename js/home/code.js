@@ -1,3 +1,7 @@
+alert("Hi! Its Faheem from MCC. Wanna have your own website? Please mail me, I'll love to here from you.")
+
+
+
 let x = 0;
 
 
@@ -23,5 +27,9 @@ function openNav() {
 
 function closeNav() {
     const nav = document.getElementById("nav");
-    if (x==1) {nav.style.display = "none";}
+    const container = document.getElementById("main2");
+    if (x == 1) {
+        nav.style.display = "none";
+        container.style.display = "none";
+    }
 }
