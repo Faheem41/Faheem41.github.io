@@ -1,4 +1,4 @@
-alert("Hi! Its Faheem from MCC. Wanna have your own website? Please mail me, I'll love to here from you.")
+# alert("Hi! Its Faheem from MCC. Wanna have your own website? Please mail me, I'll love to here from you.")
 
 
 
