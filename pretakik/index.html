@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="rock paper scissor game, Game, Pretakik, faheem41.github.io/pretakik">
+        <meta name="canonical" content="https://faheem41.github.io/pretakik">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta property="og:url" content="https://faheem41.github.io/pretakik">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="প্রেটাকিক | A rock-paper-scissor game">
+        <meta property="og:image" content="https://faheem41.github.io/pretakik/banner.png">
+        <meta name="twitter:title" content="প্রেটাকিক | A rock-paper-scissor game">
+        <meta name="twitter:image" content="https://faheem41.github.io/img/global/logo-social.png">
+        <meta name="twitter:creator" content="@faheemhossain41">
+        <meta itemprop="name" content="প্রেটাকিক | A rock-paper-scissor game">
+        <title>প্রেটাকিক | A rock-paper-scissor game</title>
+        <link rel="icon" href="k.png">
+        <link rel="apple-touch-icon" href="k.png">
+        <link rel="stylesheet" type="text/css" href="style1.css">
+    </head>
+
+    <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <script>
+            document.body.style.backgroundImage = "url(" +
+                ["bg1.jpg", "bg2.jpg", "bg3.jpg"][Math.floor(Math.random()*3)] +
+                ")";
+        </script>
+        <nav>
+            <div>
+                <img src="glo-logo.png" alt="logo of company">
+            </div>
+            <div>
+                <button onclick="initialize(true)">play</button>
+                <div onclick="tButton()">T</div>
+                <div onclick="iButton()">i</div>
+            </div>
+        </nav>
+        <header>
+            <h1>Pretakik</h1>
+            <h4 style="letter-spacing: 1rem;">ROCK . PAPER . SCISSOR</h4>
+            <p align="center">The Queen of Beauty is kidnapped by the Kingdom of Mars. Thousands have already tried and failed. Now it's your turn. Go and fight them, play and win the rock-paper-scissor to bring back colors on the Earth.</p>
+        </header>
+        <main id="mainHtml">
+            <div id="map-container">
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+                <div class="map"></div>
+            </div>
+            <div id="play-container">
+                <progress value="5" max="50"></progress>
+                <span id="pt" style="font-weight: bold;">5</span><br>
+                <div>Let's play. You will die if your point turns 0, or you loose with DEATH. You get <span id="point">1</span>pt if you win.</div>
+                <button class="button-1" role="button" onclick="main(0)">Rock</button>
+                <button class="button-1" role="button" onclick="main(1)">Paper</button>
+                <button class="button-1" role="button" onclick="main(2)">Scissor</button>
+                <div>
+                    >> You : <span id="user">...</span><br>
+                    >> Comp: <span id="comp">...</span><br>
+                    >> <span id="winner">...</span> wins !!!
+                </div>
+            </div>
+        </main>
+        <div style="height: 40vh;"></div>
+        <footer>
+            <div>
+                <a href="https://github.com/Faheem41/Faheem41.github.io/pretakik" target="_blank" rel="noopener noreferer" style="text-decoration: none; font-size: small; color: blueviolet;">|source code|</a>
+                <a href=mailto:faheem2941@outlook.com target="_blank" rel="noopener noreferer" style="text-decoration: none; font-size: small; color: blueviolet;">|contact|</a><br><br>
+                <bold>Copyright 2022 © Md. Faheem Hossain</bold><br><br>
+                <h2 style="letter-spacing: .25rem;">Pretakik</h2><br>
+                written by <i>Md. Faheem Hossain</i><br>
+                <small>a prodct of Glory</small><br>
+                <small>from Bangladesh</small>
+            </div>
+        </footer>
+    </body>
+    <script src="script1.js"></script>
+</html>
+
