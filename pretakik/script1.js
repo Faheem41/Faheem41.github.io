@@ -131,4 +131,12 @@ if ((screen.orientation.type == "portrait-primary") ||
         alert("Please rotate your screen to landscape and then reload :)");
 }
 
+
+if (!(localStorage.getItem('was_visited'))) {
+    localStorage.setItem('was_visited', 1);
+    console.log(1);
+    alert("Rules:\n1. Click the Play button to start and restart\n2. Click the Rock, Paper or Scissor button to declare your move\n3. You WIN by reaching the castle\n4. If your point turns 0, or if you loose with Death, you LOOSE and the game restarts automatically")
+}
+
+
 initialize(true);
