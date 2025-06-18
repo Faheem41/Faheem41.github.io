@@ -1,0 +1,47 @@
+<head>
+    <meta name="description" content="Countdown | 91 BMA LC">
+    <meta name="canonical" content="https://faheem41.github.io/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://faheem41.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Countdown - 91LC" />
+    <meta property="og:description" content="Countdown | 91 BMA LC">
+    <meta property="og:image" content="Faheem41.github.io/img/global/logo-social.png">
+    <meta name="twitter:title" content="Countdown - 91LC">
+    <meta name="twitter:description" content="Countdown | 91 BMA LC">
+    <meta name="twitter:image" content="Faheem41.github.io/img/global/logo-social.png">
+    <meta name="twitter:creator" content="@faheemhossain41">
+    <meta itemprop="name" content="Countdown - 91LC">
+    <meta itemprop="description" content="Countdown | 91 BMA LC">
+    <title>Countdown - 91LC</title>
+    <link rel="icon" href="Faheem41.github.io/img/global/favicon.png">
+    <link rel="icon" href="Faheem41.github.io/img/global/favicon.png" sizes="32x32">
+    <link rel="icon" href="Faheem41.github.io/img/global/favicon192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="Faheem41.github.io/img/global/favicon192.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap" rel="stylesheet">
+    <div class="pg" id="pg1">
+        <p style="font-size: 3vw; color: #05445e;">
+            <strong id="day" style="font-size: 20vw; color: #d4f1f4;">76</strong><br>days left<br>In Sha Allah
+        </p>
+    </div>
+    <div class="pg" id="pg2">
+        <p style="font-size: 3vw; color: #5885af;">
+            <strong id="month" style="font-size: 8vw; color: #c3e0e5">76</strong><br><br>In Sha Allah
+        </p>
+    </div>
+    <script>
+        var vicDay = new Date("Dec 5, 2026").getTime();
+        var now = new Date().getTime();
+        var dstn = vicDay - now;
+        var days = Math.floor(dstn / (1000 * 60 * 60 * 24));
+        document.getElementById("day").innerHTML = days;
+        var months = Math.floor(days / 30);
+        var days = days - (months*30);
+        document.getElementById("month").innerHTML = months + "m " + days + "d left";
+    </script>
+</body>
